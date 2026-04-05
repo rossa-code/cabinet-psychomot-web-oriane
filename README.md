@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Site vitrine — Cabinet Oriane Millet
 
-# Run and deploy your AI Studio app
+Site statique pour le cabinet de psychomotricienne à Montpellier : présentation, parcours de formations, motifs de consultation, tarifs et contact.
 
-This contains everything you need to run your app locally.
+## Prérequis
 
-View your app in AI Studio: https://ai.studio/apps/4a949e0b-08da-4023-83ce-3cfd204d86e6
+- [Node.js](https://nodejs.org/) (version LTS recommandée)
 
-## Run Locally
+## Installation et commandes
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev      # serveur de dev — http://localhost:3000 (écoute sur 0.0.0.0)
+npm run build    # production dans dist/
+npm run preview  # prévisualisation du build
+npm run lint     # vérification TypeScript (tsc --noEmit)
+```
 
+## Stack technique
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- React 19, TypeScript
+- Vite 6
+- Tailwind CSS 4 (`@tailwindcss/vite`)
+- Lucide React (icônes)
+
+## Structure du projet
+
+- `src/App.tsx` — page unique (sections, navigation)
+- `src/components/` — composants réutilisables (`ParcoursExpandableCard`, etc.)
+- `src/data/` — contenu structuré (formations)
+- `src/images/` — médias (ex. portrait)
+- `src/index.css` — thème et tokens Tailwind
+
+Aucune variable d’environnement n’est requise pour le développement ou le build.

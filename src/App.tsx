@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Brain, PersonStanding, CheckCircle2, Menu, X } from 'lucide-react';
 import { ParcoursExpandableCard } from './components/ParcoursExpandableCard';
@@ -476,7 +471,7 @@ export default function App() {
                   href="mailto:oriane.millet@psychomot.com"
                   className={`${btnPrimary} w-full justify-center sm:w-auto`}
                 >
-                  Écrire un message
+                  Contacter par email
                 </a>
                 <a
                   href="tel:+33670516998"
