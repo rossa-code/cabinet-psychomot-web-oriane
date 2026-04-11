@@ -2,6 +2,8 @@
 
 Site statique pour le cabinet de psychomotricienne à Montpellier : présentation, parcours de formations, motifs de consultation, tarifs et contact.
 
+Adresse : https://oriane-millet.github.io/psychomotricienne-montpellier/
+
 ## Prérequis
 
 - [Node.js](https://nodejs.org/) (version LTS recommandée)
